@@ -1,8 +1,10 @@
 import React from 'react';
-
+import ChartPage from '../ChartPage/ChartPage';
+//import Script from "react-inline-script";
 
 function HomePage() {
   return (
+      <>
     <main className="center" id="main">
     <div className="page-area">
         <article className="text-box">
@@ -26,14 +28,14 @@ function HomePage() {
         </article>
     </div>
 
-    <div className ="text-box">
-        <h1>Chart</h1>
-        <p>
-            <canvas id="myChart" width="400" height="400"></canvas>
-        </p> 
-
-    </div>
+    
 </main>
+    <h1>Chart</h1>
+    <ChartPage/>
+        
+</>
+        
+
   );
 }
 
